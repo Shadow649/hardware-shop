@@ -1,0 +1,3 @@
+==== Links
+
+include::{snippets}/index-example/links.adoc[]
