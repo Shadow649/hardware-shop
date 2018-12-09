@@ -73,6 +73,8 @@ The order service is implemented using CQRS+(a bit of)EventSourcing using Axon F
 
 The application stores the data using H2 in ~/db/hs.
 
+H2 console available at http://127.0.0.1:8080/console/
+
 
 ## Usage
 In order to run the single node version you may execute the following commands: 
