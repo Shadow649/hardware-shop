@@ -29,7 +29,7 @@ public class OrderModelMapperConfiguration {
                 List<OrderLine> orderLines = source.getOrderLines();
                 List<LineItemDto> lines = orderLines.stream().map(orderLine -> new LineItemDto(orderLine.getProductId(), orderLine.getName(), orderLine.getPrice(), orderLine.getOldName(), orderLine.getOldPrice())).collect(Collectors.toList());
                 long totalPrice = lines.stream().map(LineItemDto :: getPrice).reduce(0L, (price1, price2) -> price1 + price2);
-                return new OrderDetailsDTO(source.getId(), source.getCustomerEmail(), lines, source.getStatus(), totalPrice);
+                return new OrderDetailsDTO(source.getId(), source.getCustomerEmail(), lines, source.getStatus(), source.getConfirmedDate(), totalPrice);
             }
         };
 
