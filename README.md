@@ -51,8 +51,8 @@ The order service exposes the following REST apis:
 **see the order-query target/generetad-snippets for details**
 
 When an order is created with POST it is validated. An order is valid if all products are valid to be purchased.  
-In this example a product is valid to be purchased if exists.
-A valid order has APPROVED status
+In this example a product is valid to be purchased if exists.  
+A valid order has APPROVED status  
 An invalid order has REJECTED status.
 
 Only an order in APPROVED state can be CONFIRMED.
