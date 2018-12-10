@@ -22,7 +22,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <springfox-version>2.9.2</springfox-version>
+        <axon.version>4.0.2</axon.version>
         <java.version>1.8</java.version>
     </properties>
 
@@ -31,7 +31,7 @@
             <dependency>
                 <groupId>org.axonframework</groupId>
                 <artifactId>axon-spring-boot-starter</artifactId>
-                <version>4.0.2</version>
+                <version>${axon.version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.axonframework</groupId>
@@ -65,7 +65,7 @@
         <dependency>
             <groupId>org.axonframework</groupId>
             <artifactId>axon-test</artifactId>
-            <version>4.0.2</version>
+            <version>${axon.version}</version>
             <scope>test</scope>
         </dependency>
 
