@@ -19,7 +19,7 @@ import java.util.Collection;
  * @author Emanuele Lombardi
  */
 @ControllerAdvice
-public class DtoMapperResponseBodyAdvice extends AbstractMappingJacksonResponseBodyAdvice {
+public class DTOMapperResponseBodyAdvice extends AbstractMappingJacksonResponseBodyAdvice {
 
     @Autowired
     private ModelMapper modelMapper;

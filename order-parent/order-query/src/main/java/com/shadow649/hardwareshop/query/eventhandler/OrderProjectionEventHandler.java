@@ -19,12 +19,12 @@ import java.util.List;
  * @author Emanuele Lombardi
  */
 @Component
-public class OrderEventHandler {
+public class OrderProjectionEventHandler {
 
     private OrderEntryService service;
 
     @Autowired
-    public OrderEventHandler(OrderEntryService service) {
+    public OrderProjectionEventHandler(OrderEntryService service) {
         this.service = service;
     }
 
